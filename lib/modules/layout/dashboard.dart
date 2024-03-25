@@ -1,5 +1,4 @@
-import 'package:aplikasi_pengaduan_sekolah_v1/modules/getX/widget_controller.dart';
-
+import '../../modules/getX/widgetcontroller/widget_controller.dart';
 import '../../widgets/cards/dashboard/authorize_members_content.dart';
 import '../../widgets/cards/dashboard/finished_complaints_content.dart';
 import '../../widgets/cards/dashboard/processed_complaints_content.dart';
@@ -11,18 +10,19 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../widgets/cards/dashboard/navbar_content.dart';
 import '../../widgets/cards/dashboard/sidebar_content.dart';
-import '../getX/navigation_controller.dart';
+import '../getX/widgetcontroller/navigation_controller.dart';
 import '../../constants/route_path.dart';
 
 class Dashboard extends StatelessWidget {
   Dashboard({Key? key}) : super(key: key);
 
-  final widgetController = Get.put(WidgetController());
+  final dropdownController = Get.put(WidgetController(), tag: 'dropdown');
+  final widgetController = Get.create(() => WidgetController());
+  final navigationController = Get.lazyPut(() => NavigationController());
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: navbar(context: context),
       body: LayoutBuilder(
           builder: (context, constraints) => Center(
                 child: SizedBox(

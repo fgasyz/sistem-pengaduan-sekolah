@@ -1,6 +1,7 @@
 class RoutePath {
   static const String login = '/login';
   static const String register = '/register';
+  static const String home = '/';
   static const String dashboard = '/dashboard';
   static const String authorizeMembers = '/dashboard/members/unauthorized';
   static const String unauthorizeMembers = '/dashboard/members/authorized';

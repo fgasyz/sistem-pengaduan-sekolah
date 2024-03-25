@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../modules/layout/login.dart';
 import '../../modules/layout/register.dart';
+import '../../modules/layout/home.dart';
 import '../../modules/layout/dashboard.dart';
 import '../../constants/route_path.dart';
 
@@ -15,6 +16,7 @@ import '../../widgets/cards/dashboard/all_complaints_content.dart';
 Map<String, Widget Function(BuildContext context)> routeConfig = {
   RoutePath.login: (BuildContext context) => const Login(),
   RoutePath.register: (BuildContext context) => const Register(),
+  RoutePath.home: (BuildContext context) => const Home(),
   RoutePath.dashboard: (BuildContext context) => Dashboard(),
   RoutePath.authorizeMembers: (BuildContext context) =>
       const AuthorizeMembersContent(),

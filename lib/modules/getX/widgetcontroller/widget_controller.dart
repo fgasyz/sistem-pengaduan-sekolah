@@ -6,16 +6,9 @@ class WidgetController extends GetxController {
 
   void onUpdateDropdown() {
     isActive.value = !isActive.value;
-    update(['manajemen_anggota']);
-  }
-
-  void onUpdateDropdown2() {
-    isActive.value = !isActive.value;
-    update(['daftar_pengaduan']);
   }
 
   void onChangeDrawer() {
     isDrawer.value = !isDrawer.value;
-    update();
   }
 }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../tables/incoming_complaints_table.dart';
+import '../../tables/complaint_content_table.dart';
 
 class IncomingComplaintsContent extends StatelessWidget {
 const IncomingComplaintsContent({ Key? key }) : super(key: key);
@@ -40,7 +40,7 @@ const IncomingComplaintsContent({ Key? key }) : super(key: key);
                       offset: const Offset(0, 0))
                 ],
                 color: Colors.white),
-                child: IncomingComplaintsTable(),
+                child: const ComplaintContentTable()
           ))
         ]),
       );

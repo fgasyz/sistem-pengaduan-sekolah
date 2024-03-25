@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../tables/authorize_members_table.dart';
+import '../../tables/user_content_table.dart';
 
 class AuthorizeMembersContent extends StatelessWidget {
   const AuthorizeMembersContent({Key? key}) : super(key: key);
@@ -40,7 +40,7 @@ class AuthorizeMembersContent extends StatelessWidget {
                     offset: const Offset(0, 0))
               ],
               color: Colors.white),
-              child: AuthorizeMembersTable(),
+              child: const UserContentTable(),
         ))
       ]),
     );

@@ -1,5 +1,5 @@
+import '../../tables/complaint_content_table.dart';
 import 'package:flutter/material.dart';
-import '../../tables/processed_complaints_table.dart';
 
 class ProcessedComplaintsContent extends StatelessWidget {
   const ProcessedComplaintsContent({Key? key}) : super(key: key);
@@ -40,7 +40,7 @@ class ProcessedComplaintsContent extends StatelessWidget {
                       offset: const Offset(0, 0))
                 ],
                 color: Colors.white),
-                child: ProcessedComplaintsTable(),
+                child:const ComplaintContentTable(),
           ))
         ]),
       );

@@ -41,7 +41,8 @@ class ProfileContent extends StatelessWidget {
                     offset: const Offset(0, 0))
               ],
               color: Colors.white),
-          child: Row(
+          child: FittedBox(
+              child: Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               ClipRRect(
@@ -52,7 +53,7 @@ class ProfileContent extends StatelessWidget {
                   height: 200,
                 ),
               ),
-              SizedBox(width: 30),
+              const SizedBox(width: 30),
               Flex(
                 direction: Axis.vertical,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -63,17 +64,17 @@ class ProfileContent extends StatelessWidget {
                           style: Theme.of(context).textTheme.headlineSmall)
                     ],
                   ),
-                  SizedBox(height: 20),
-                  Divider(),
-                  Row(
+                  const SizedBox(height: 20),
+                  const Divider(),
+                  const Row(
                     children: [
                       Icon(Icons.person),
                       SizedBox(width: 20),
                       Text('Admin | Firga Ismayoza'),
                     ],
                   ),
-                  Divider(),
-                  Flex(
+                  const Divider(),
+                  const Flex(
                     direction: Axis.horizontal,
                     children: [
                       Icon(Icons.email_rounded),
@@ -81,34 +82,38 @@ class ProfileContent extends StatelessWidget {
                       Text('Email | admin@gmail.com'),
                     ],
                   ),
-                  Divider(),
-                  Row(
+                  const Divider(),
+                  const Row(
                     children: [
                       Icon(Icons.calendar_month_rounded),
                       SizedBox(width: 20),
                       Text('Aktif | 15 Maret 2024'),
                     ],
                   ),
-                  Divider(),
-                  Row(
+                  const Divider(),
+                  const Row(
                     children: [
                       Icon(Icons.equalizer_rounded),
                       SizedBox(width: 20),
                       Text('Jumlah Pengaduan | 0'),
                     ],
                   ),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   Flex(
                     direction: Axis.horizontal,
                     children: [
                       customElevatedButton(
+                          height:40,
+                          pV: 2,
                           title: 'Ubah Profile',
                           titleColor: Colors.white,
                           context: context,
                           backgroundColor: Colors.green,
                           onCallback: () {}),
-                      SizedBox(width: 10),
+                      const SizedBox(width: 10),
                       customElevatedButton(
+                          height: 40,
+                          pV: 2,
                           title: 'Ubah Kata Sandi',
                           titleColor: Colors.white,
                           context: context,
@@ -119,7 +124,7 @@ class ProfileContent extends StatelessWidget {
                 ],
               )
             ],
-          ),
+          )),
         )
       ]),
     );

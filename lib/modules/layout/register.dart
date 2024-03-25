@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../widgets/textinput/custom_text_field.dart';
+import '../../widgets/custom_text_field.dart';
 import '../../widgets/buttons/custom_elevated_button.dart';
 import '../../constants/route_path.dart';
 import 'package:icons_plus/icons_plus.dart';

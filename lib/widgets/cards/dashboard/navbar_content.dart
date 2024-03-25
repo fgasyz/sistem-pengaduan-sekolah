@@ -1,6 +1,6 @@
-import 'package:aplikasi_pengaduan_sekolah_v1/modules/getX/widget_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import '../../../modules/getX/widgetcontroller/widget_controller.dart';
 
 class NavbarContent extends StatelessWidget {
   const NavbarContent({Key? key}) : super(key: key);
@@ -20,12 +20,11 @@ class NavbarContent extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Container(
-              child: IconButton(
-                  icon: Icon(Icons.menu_open_rounded, size: 30),
-                  onPressed: () {
-                    Get.find<WidgetController>().onChangeDrawer();
-                  })),
+          IconButton(
+              icon: const Icon(Icons.menu_open_rounded, size: 30),
+              onPressed: () {
+                Get.find<WidgetController>(tag: 'dropdown').onChangeDrawer();
+              }),
           Row(
             children: [
               Container(

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../tables/finished_complaints_table.dart';
+import '../../tables/complaint_content_table.dart';
 
 class FinishedComplaintsContent extends StatelessWidget {
   const FinishedComplaintsContent({Key? key}) : super(key: key);
@@ -16,7 +16,9 @@ class FinishedComplaintsContent extends StatelessWidget {
                   .textTheme
                   .copyWith(
                       titleMedium: TextStyle(
-                          fontWeight: FontWeight.w400, fontSize: 16, color: Colors.grey[400]))
+                          fontWeight: FontWeight.w400,
+                          fontSize: 16,
+                          color: Colors.grey[400]))
                   .titleMedium),
         ),
         Container(
@@ -40,7 +42,7 @@ class FinishedComplaintsContent extends StatelessWidget {
                     offset: const Offset(0, 0))
               ],
               color: Colors.white),
-              child: FinishedComplaintsTable(),
+          child: const ComplaintContentTable(),
         ))
       ]),
     );

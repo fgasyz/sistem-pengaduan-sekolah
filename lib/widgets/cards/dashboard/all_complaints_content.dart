@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import '../../tables/all_complaints_table.dart';
+import '../../tables/complaint_content_table.dart';
 
 class AllComplaintsContent extends StatelessWidget {
   const AllComplaintsContent({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
     return Container(
       margin: const EdgeInsets.only(bottom: 10),
       child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
@@ -30,7 +29,7 @@ class AllComplaintsContent extends StatelessWidget {
                     .copyWith(titleMedium: const TextStyle(fontSize: 24))
                     .titleMedium)),
         Flex(
-          direction:Axis.horizontal,
+          direction: Axis.horizontal,
           children: [
             Expanded(
                 child: Container(
@@ -64,7 +63,7 @@ class AllComplaintsContent extends StatelessWidget {
                           .copyWith(
                               headlineLarge: TextStyle(
                                   color: Colors.red[600],
-                                  fontSize: 30,
+                                  fontSize: 35,
                                   fontWeight: FontWeight.bold))
                           .headlineLarge)
                 ],
@@ -102,7 +101,7 @@ class AllComplaintsContent extends StatelessWidget {
                           .copyWith(
                               headlineLarge: TextStyle(
                                   color: Colors.green[600],
-                                  fontSize: 30,
+                                  fontSize: 35,
                                   fontWeight: FontWeight.bold))
                           .headlineLarge)
                 ],
@@ -140,7 +139,7 @@ class AllComplaintsContent extends StatelessWidget {
                           .copyWith(
                               headlineLarge: TextStyle(
                                   color: Colors.blue[600],
-                                  fontSize: 30,
+                                  fontSize: 35,
                                   fontWeight: FontWeight.bold))
                           .headlineLarge)
                 ],
@@ -151,7 +150,7 @@ class AllComplaintsContent extends StatelessWidget {
         Expanded(
             child: Container(
           margin: const EdgeInsets.only(top: 10, left: 20, right: 20),
-          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(5),
               boxShadow: [
@@ -162,7 +161,7 @@ class AllComplaintsContent extends StatelessWidget {
                     offset: const Offset(0, 0))
               ],
               color: Colors.white),
-              child: AllComplaintsTable(),
+          child: const ComplaintContentTable(),
         ))
       ]),
     );

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "570179855445",
+    "project_id": "sipensa",
+    "storage_bucket": "sipensa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570179855445:android:8575fa83513dd3d6d0a0dc",
+        "android_client_info": {
+          "package_name": "com.example.aplikasi_pengaduan_sekolah_v1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyZTQVmmcxLyx7YC1hwf4gsx-7V7H-sC4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

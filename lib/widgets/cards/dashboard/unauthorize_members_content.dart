@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../tables/unauthorize_members_table.dart';
+import '../../tables/user_content_table.dart';
 
 class UnauthorizeMembersContent extends StatelessWidget {
 const UnauthorizeMembersContent({ Key? key }) : super(key: key);
@@ -40,7 +40,7 @@ const UnauthorizeMembersContent({ Key? key }) : super(key: key);
                       offset: const Offset(0, 0))
                 ],
                 color: Colors.white),
-                child: UnauthorizeMembersTable(),
+                child:const UserContentTable()
           ))
         ]),
       );

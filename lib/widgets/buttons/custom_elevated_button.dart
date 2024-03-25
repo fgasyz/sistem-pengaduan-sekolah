@@ -8,10 +8,16 @@ Widget customElevatedButton(
     bool? isSidebarButton = false,
     Color? backgroundColor,
     Color? titleColor,
+    double? width,
+    double? height,
+    double? pV,
+    double? pH,
+    TextStyle? textStyle,
     required Function onCallback,
     Key? key}) {
   return SizedBox(
-      height: 45,
+      height: height ?? 45,
+      width: width,
       child: ElevatedButton(
           onPressed: () {
             onCallback();
@@ -20,7 +26,8 @@ Widget customElevatedButton(
               surfaceTintColor:
                   Theme.of(context).buttonTheme.colorScheme?.inversePrimary,
               shadowColor: Colors.transparent,
-              padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+              padding: EdgeInsets.symmetric(
+                  vertical: pV ?? 20, horizontal: pH ?? 10),
               backgroundColor: backgroundColor ?? Colors.transparent,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(5))),
@@ -36,7 +43,7 @@ Widget customElevatedButton(
                 ],
               ),
               Text(title,
-                  style: Theme.of(context)
+                  style: textStyle ?? Theme.of(context)
                       .textTheme
                       .copyWith(
                           bodyMedium: TextStyle(
