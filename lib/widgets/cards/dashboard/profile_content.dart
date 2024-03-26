@@ -103,12 +103,12 @@ class ProfileContent extends StatelessWidget {
                     direction: Axis.horizontal,
                     children: [
                       customElevatedButton(
-                          height:40,
+                          height: 40,
                           pV: 2,
                           title: 'Ubah Profile',
                           titleColor: Colors.white,
                           context: context,
-                          backgroundColor: Colors.green,
+                          backgroundColor: Colors.green.shade900,
                           onCallback: () {}),
                       const SizedBox(width: 10),
                       customElevatedButton(
@@ -117,7 +117,7 @@ class ProfileContent extends StatelessWidget {
                           title: 'Ubah Kata Sandi',
                           titleColor: Colors.white,
                           context: context,
-                          backgroundColor: Colors.green,
+                          backgroundColor: Colors.green.shade900,
                           onCallback: () {})
                     ],
                   ),

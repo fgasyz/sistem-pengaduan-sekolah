@@ -28,8 +28,6 @@ class Register extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Image.network(
-                          'https://picsum.photos/${constraints.maxWidth * 0.60}/${constraints.maxHeight}'),
                       Container(
                           width: constraints.maxWidth * 0.40,
                           padding: const EdgeInsets.symmetric(
@@ -81,10 +79,7 @@ class Register extends StatelessWidget {
                                     children: [
                                       customElevatedButton(
                                           title: 'Register',
-                                          backgroundColor: Theme.of(context)
-                                              .buttonTheme
-                                              .colorScheme
-                                              ?.primary,
+                                          backgroundColor: Colors.blue.shade900,
                                           titleColor: Colors.white,
                                           context: context,
                                           onCallback: () {}),

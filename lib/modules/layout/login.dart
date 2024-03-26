@@ -28,8 +28,6 @@ class Login extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Image.network(
-                          'https://picsum.photos/${constraints.maxWidth * 0.60}/${constraints.maxHeight}'),
                       Container(
                           width: constraints.maxWidth * 0.40,
                           padding: const EdgeInsets.symmetric(
@@ -74,13 +72,11 @@ class Login extends StatelessWidget {
                                     children: [
                                       customElevatedButton(
                                           title: 'Masuk',
-                                          backgroundColor: Theme.of(context)
-                                              .buttonTheme
-                                              .colorScheme
-                                              ?.primary,
+                                          backgroundColor: Colors.blue.shade900,
                                           titleColor: Colors.white,
                                           context: context,
-                                          onCallback: () =>  Navigator.pushNamed(context, RoutePath.dashboard)),
+                                          onCallback: () => Navigator.pushNamed(
+                                              context, RoutePath.dashboard)),
                                       const SizedBox(height: 10),
                                       customElevatedButton(
                                           title: 'Login with Google',
@@ -99,7 +95,11 @@ class Login extends StatelessWidget {
                                           const Text('Belum punya akun?'),
                                           Padding(
                                             padding: const EdgeInsets.all(8.0),
-                                            child: TextButton(child: const Text('register'), onPressed: () => Navigator.pushNamed(context, RoutePath.register)),
+                                            child: TextButton(
+                                                child: const Text('register'),
+                                                onPressed: () =>
+                                                    Navigator.pushNamed(context,
+                                                        RoutePath.register)),
                                           )
                                         ],
                                       ),

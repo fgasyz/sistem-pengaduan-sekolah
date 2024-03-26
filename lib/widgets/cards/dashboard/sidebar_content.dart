@@ -21,7 +21,7 @@ class SidebarContent extends StatelessWidget {
         ? Container(
             width: 272,
             height: height,
-            decoration: BoxDecoration(color: Colors.blue[800], boxShadow: [
+            decoration: BoxDecoration(color: Colors.blue.shade900, boxShadow: [
               BoxShadow(
                   color: Colors.grey.withOpacity(0.5),
                   spreadRadius: 1,

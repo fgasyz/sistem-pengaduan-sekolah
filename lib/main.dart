@@ -25,10 +25,15 @@ class MyApp extends StatelessWidget {
           iconTheme: IconThemeData(color: Colors.grey[800]),
           useMaterial3: true,
           dataTableTheme: DataTableThemeData(
-              decoration: BoxDecoration(borderRadius: BorderRadius.circular(5)),
-              dataRowColor: MaterialStatePropertyAll(Colors.white),
-              )),
-      initialRoute: RoutePath.dashboard,
+            decoration: BoxDecoration(borderRadius: BorderRadius.circular(5)),
+            dataRowColor: const MaterialStatePropertyAll(Colors.white),
+          ),
+          scrollbarTheme: ScrollbarThemeData(
+              thumbColor: MaterialStatePropertyAll(Colors.lightBlue.shade900),
+              trackBorderColor:
+                  MaterialStatePropertyAll(Colors.lightBlue.shade900),
+              trackColor: MaterialStatePropertyAll(Colors.lightBlue.shade900))),
+      initialRoute: RoutePath.home,
       routes: routeConfig,
     );
   }

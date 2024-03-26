@@ -12,6 +12,7 @@ Widget customElevatedButton(
     double? height,
     double? pV,
     double? pH,
+    BorderSide? bordered,
     TextStyle? textStyle,
     required Function onCallback,
     Key? key}) {
@@ -30,6 +31,7 @@ Widget customElevatedButton(
                   vertical: pV ?? 20, horizontal: pH ?? 10),
               backgroundColor: backgroundColor ?? Colors.transparent,
               shape: RoundedRectangleBorder(
+                side: bordered ?? BorderSide.none,
                   borderRadius: BorderRadius.circular(5))),
           child: Row(
             mainAxisAlignment: isSidebarButton!
@@ -43,13 +45,14 @@ Widget customElevatedButton(
                 ],
               ),
               Text(title,
-                  style: textStyle ?? Theme.of(context)
-                      .textTheme
-                      .copyWith(
-                          bodyMedium: TextStyle(
-                              color: titleColor ?? Colors.black,
-                              fontWeight: FontWeight.w400))
-                      .bodyMedium)
+                  style: textStyle ??
+                      Theme.of(context)
+                          .textTheme
+                          .copyWith(
+                              bodyMedium: TextStyle(
+                                  color: titleColor ?? Colors.black,
+                                  fontWeight: FontWeight.w400))
+                          .bodyMedium)
             ],
           )));
 }

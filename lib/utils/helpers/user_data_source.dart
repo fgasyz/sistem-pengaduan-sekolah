@@ -38,18 +38,18 @@ class UserDataSource extends DataTableSource {
               pV: 2,
               context: context,
               titleColor: Colors.white,
-              backgroundColor: Colors.blueAccent,
+              backgroundColor: Colors.blue.shade900,
               width: 80,
               textStyle: Theme.of(context)
                         .textTheme
                         .copyWith(
-                            bodySmall: TextStyle(
+                            bodySmall: const TextStyle(
                               color: Colors.white,
                               fontSize: 12,
                                 fontWeight: FontWeight.normal))
                         .bodySmall,
               onCallback: () {}),
-          SizedBox(width: 15),
+          const SizedBox(width: 15),
           customElevatedButton(
               height: 35,
               pV: 2,
@@ -57,14 +57,14 @@ class UserDataSource extends DataTableSource {
               textStyle: Theme.of(context)
                         .textTheme
                         .copyWith(
-                            bodySmall: TextStyle(
+                            bodySmall: const TextStyle(
                               color: Colors.white,
                               fontSize: 12,
                                 fontWeight: FontWeight.normal))
                         .bodySmall,
               context: context,
               titleColor: Colors.white,
-              backgroundColor: Colors.redAccent,
+              backgroundColor: Colors.red.shade900,
               width: 80,
               onCallback: () {}),
         ],
